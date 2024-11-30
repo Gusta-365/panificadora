@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Panificadora San José</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            perspective: 1000px;
+        }
+
+        .slide {
+            display: none;
+            padding: 40px;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .slide.active {
+            display: block;
+            transform: rotateY(0deg);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2a9d8f;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin: 0 0 10px;
+        }
+
+        .content ul {
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #2a9d8f;
+        }
+
+        .navigation button {
+            background-color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #2a9d8f;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navigation button:hover {
+            background-color: #2a9d8f;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="slide active">
+            <h1>Panificadora San José</h1>
+            <h2>Producción de Pan y Productos de Panadería</h2>
+        </div>
+        <div class="slide">
+            <h3>Introducción</h3>
+            <p>Panificadora San José, fundada en 1995 y ubicada en Quetzaltenango, Guatemala, es una empresa familiar
+                dedicada a la producción de pan y productos de panadería, con casi 30 años en el mercado.</p>
+        </div>
+        <div class="slide">
+            <h3>Desarrollo del tema</h3>
+            <h4>Estándares de control aplicados</h4>
+            <ul>
+                <li>Estándares de calidad</li>
+                <li>Estándares de seguridad alimentaria</li>
+                <li>Estándares de eficiencia</li>
+                <li>Estándares de sostenibilidad</li>
+            </ul>
+        </div>
+        <div class="slide">
+            <h4>Función de cada estándar</h4>
+            <ul>
+                <li>Calidad: Mantiene la reputación de la panificadora y asegura la satisfacción del cliente.</li>
+                <li>Seguridad alimentaria: Protege la salud de los consumidores al garantizar productos seguros.</li>
+                <li>Eficiencia: Mejora la rentabilidad y reduce costos operativos.</li>
+                <li>Sostenibilidad: Contribuye a la conservación del medio ambiente y mejora la imagen de la empresa.
+                </li>
+            </ul>
+        </div>
+        <div class="slide">
+            <h4>Razones para usar estos estándares</h4>
+            <ul>
+                <li><b>Calidad:</b> Evita devoluciones de productos y garantiza la lealtad del cliente.</li>
+                <li><b>Seguridad alimentaria:</b> Cumple con normativas legales y previene problemas de salud pública.
+                </li>
+                <li><b>Eficiencia:</b> Reduce costos de producción y tiempos de entrega.</li>
+                <li><b>Sostenibilidad:</b> Mejora la responsabilidad social y reduce el impacto ambiental.</li>
+            </ul>
+        </div>
+        <div class="slide">
+            <h3>Conclusión</h3>
+            <p>La implementación de estándares de control en Panificadora San José ha sido clave para su éxito y
+                sostenibilidad a largo plazo.</p>
+        </div>
+        <div class="slide">
+            <h3>Recomendaciones</h3>
+            <ul>
+                <li>Implementación de nuevas tecnologías</li>
+                <li>Formación continua</li>
+                <li>Auditorías regulares</li>
+                <li>Colaboración con otras empresas</li>
+            </ul>
+        </div>
+        <div class="slide">
+            <h3>Bibliografía</h3>
+            <ul>
+                <li>Páginas Amarillas. Información sobre Panificadora San José. Recuperado de <a
+                        href="https://www.paginasamarillas.com.gt">Páginas Amarillas</a>.</li>
+                <li>EspacioERP. Artículo sobre los tipos principales de estándares de control y cómo aplicarlos en tu
+                    empresa. Recuperado de <a href="https://espacioerp.com/estandares-de-control/">EspacioERP</a>.</li>
+                <li>Komercioweb. Definición, tipos y aplicación de estándares de control en diferentes industrias.
+                    Recuperado de <a
+                        href="https://komercioweb.com/blog/estandares-de-control-definicion-tipos-y-aplicacion-en-diferentes-industrias">Komercioweb</a>.
+                </li>
+                <li>Elsevier. Incidencia de estándares internacionales en la sostenibilidad corporativa. Recuperado de
+                    <a
+                        href="https://www.elsevier.es/es-revista-estudios-gerenciales-354-articulo-incidencia-estandares-internacionales-sostenibilidad-corporativa-S0123592316300237">Elsevier</a>.
+                </li>
+                <li>Universidad APEC. Bibliografía de Administración de Empresas - UNAPEC. Recuperado de <a
+                        href="https://biblioteca.unapec.edu.do/media/avbj0t3y/bibliografia-administracion-de-empresas.pdf">UNAPEC</a>.
+                </li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <button id="prev">Anterior</button>
+            <button id="next">Siguiente</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+
+            document.getElementById('next').addEventListener('click', () => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            });
+
+            document.getElementById('prev').addEventListener('click', () => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
